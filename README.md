@@ -14,7 +14,7 @@ Add this to your `.pre-commit-config.yaml`
 -   repo: https://github.com/aneustroev/check-branch-name
     rev: v0.0.2  # Use the ref you want to point at
     hooks:
-    -   id: add-msg-issue-prefix
+    -   id: check-branch-name
         args:
             - --regexp=".*"
 ```
