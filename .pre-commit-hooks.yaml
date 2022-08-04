@@ -1,0 +1,6 @@
+-   id: check-branch-name
+    name: Check branch name
+    description: Validate branch name by regexp
+    entry: check-branch-name
+    language: python
+    always_run: true
