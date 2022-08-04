@@ -4,3 +4,4 @@
     entry: check_branch_name
     language: python
     always_run: true
+    stages: [prepare-commit-msg]
