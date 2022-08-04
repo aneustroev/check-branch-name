@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "check-branch-name"
+version = "v0.0.4"
+description = "Commit hook for validate branch name"
+authors = ["Neustroev Andrei <a.neustroev@clickadu.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.5"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.0.0"
+
+[tool.poetry.scripts]
+check_branch_name = "check_branch_name.check_branch_name:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
