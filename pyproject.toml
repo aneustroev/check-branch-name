@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "check-branch-name"
-version = "v0.0.4"
+name = "pre-commit-hooks"
+version = "v0.0.1"
 description = "Commit hook for validate branch name"
-authors = ["Neustroev Andrei <a.neustroev@clickadu.com>"]
+authors = ["devops <ops@clickadu.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.5"
@@ -11,7 +11,9 @@ python = "^3.5"
 pytest = "^5.0.0"
 
 [tool.poetry.scripts]
-check_branch_name = "check_branch_name.check_branch_name:main"
+check_branch_name = "pre_commit_hooks.check_branch_name:main"
+check_doc_acl = "pre_commit_hooks.check_doc_acl:main"
+gen_doc_autoindex = "pre_commit_hooks.gen_doc_autoindex:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

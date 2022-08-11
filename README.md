@@ -1,3 +1,5 @@
+@ACL all
+
 check-branch-name
 =========================
 

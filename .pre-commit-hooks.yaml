@@ -1,3 +1,4 @@
+---
 -   id: check-branch-name
     name: Check branch name
     description: Validate branch name by regexp
@@ -5,3 +6,17 @@
     language: python
     always_run: true
     stages: [prepare-commit-msg]
+
+-   id: check-docs-acl-set
+    name: 'Check that for all docs page set ACL riles'
+    entry: check_doc_acl
+    files: docs\/.*\.md$
+    language: python
+    description: "Check that all docs files have correct @ACL annotation"
+
+- id: gen-doc-autoindex
+  name: 'Generator autoindexes for docs'
+  entry: gen_doc_autoindex
+  files: docs\/.*README.md$
+  language: python
+  description: "Genarate autoindex pages in docs files, by keyword: <autoindex>"
